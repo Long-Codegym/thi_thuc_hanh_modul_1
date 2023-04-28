@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</html>
+<script>
+    let array = [1, 2, 4, 8, 9];
+    let x = 2;
+    let index = 4;
+
+    function insertNumberToArray(array, x, index) {
+        if (index >= 0 || index <= array.length) {
+            for (let i = array.length; i > index; i--) {
+                array[i] = array[i - 1];
+            }
+            array[index] = x;
+            return array;
+        } else {
+            return array;
+        }
+    }
+
+    insertNumberToArray(array, x, index)
+</script>
